@@ -146,7 +146,8 @@ final class LazyHolderSingleton{
     }
 }
 
-//Unbreakable singleton class
+//Unbreakable singleton class - here the class is not implementing cloning and keep track of instantiated and
+//Synchronize the instantiation and throw an runtime exception , in case its already created once.
 final class UnbreakableLazyHolderSingleton{
 
     private static boolean instantiated = false;
